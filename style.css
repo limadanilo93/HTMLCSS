@@ -1,12 +1,18 @@
 body {
-    background: #cccccc;
-
+    
+}
+.cima{
+padding-left: 20px;
 }
 #banner {
     width: 100%;
     
 }
-h1 {
+.principal {
+    background: #cccccc;
+    padding: 30 px;
+}
+h2 {
     text-align: center;
     border: 2px solid #000000;
     padding: 2px;
@@ -22,4 +28,23 @@ p{
 }
 strong em {
     color:rgb(230, 19, 19)
+}
+.lista1 {
+    font-style: italic;
+}
+.beneficios {
+    padding: 20px;
+    background: white;
+}
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: auto;
+}
+.beneficios h2 {
+    text-align: center;
+}
+.beneficios #bannerbene{
+    width: 50%;
 }
