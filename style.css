@@ -1,50 +1,48 @@
-body {
-    
-}
-.cima{
-padding-left: 20px;
-}
 #banner {
-    width: 100%;
-    
+	width:100%;
 }
-.principal {
-    background: #cccccc;
-    padding: 30 px;
-}
-h2 {
-    text-align: center;
-    border: 2px solid #000000;
-    padding: 2px;
-    margin: 20px;
-}
-p{
-    text-align: center;
-    
 
+.principal{
+	background: #CCCCCC;
+	padding: 30px;
 }
+
+.titulo-principal {
+	padding-left: 20px;
+}
+
+.titulo-centralizado {
+	text-align: center
+}
+
+p {
+	text-align: center;
+}
+
 #missao {
-    font-size: 20px
+	font-size: 20px
 }
-strong em {
-    color:rgb(230, 19, 19)
+
+em strong {
+	color: #FF0000;
 }
-.lista1 {
-    font-style: italic;
+
+.itens {
+	font-style: italic
 }
+
 .beneficios {
-    padding: 20px;
-    background: white;
+	background: #FFFFFF;
+	padding: 20px;
 }
+
 ul {
-    display: inline-block;
-    vertical-align: top;
-    width: 20%;
-    margin-right: auto;
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	margin-right: 15%;
 }
-.beneficios h2 {
-    text-align: center;
-}
-.beneficios #bannerbene{
-    width: 50%;
+
+.imagembeneficios {
+	width: 50%;
 }
