@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contatos - Barbearia Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="page-style.css">
+        
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1 class="logo"><img src="./images/logo.png"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div> 
+        </header>
+        <main>
+            <form id="contact-form">
+                <input type="hidden" name="contact_number">
+                <label for="nomeSobrenome">Nome e Sobrenome</label>
+                <input type="text" id="nomeSobrenome" class="input-text" placeholder="Digite aqui">
+                <label for="email">E-mail</label>
+                <input type="text" id="email" placeholder="Email" class="input-text">
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone" placeholder="Telefone" class="input-text">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" placeholder="Digite sua mensagem" cols="80" rows="10" class="input-text"></textarea>
+                <div class="contacts">
+                    <p>Como prefere o contato?</p>
+                    <label for="formaEmail"> <input type="radio" name="contact" id="formaEmail" value="email">Email</label>
+                    <label for="formaWapp"> <input type="radio" name="contact" id="formaWapp" value="WhatsApp">WhatsApp</label>
+                   <label for="formaTelefone"><input type="radio" name="contact" id="formaTelefone" value="telefone">Telefone</label>
+                </div>
+                    <label><input type="checkbox" class="check"> Gostaria de receber novidades por email?</label>
+                    <input type="submit" id="enviar">
+                
+                
+            </form>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+            <script src="./appcontact.js"></script>
+        </main>
+        <footer>
+            <img src="./images/logo-branco.png">
+            <p>	&copy;Todos os direitos reservados</p>
+        </footer>
+    </body>
+</html>

@@ -78,3 +78,32 @@ footer {
     padding-bottom: 40px;
     background:url(./images/bg.jpg);
 }
+main {
+    width: 940px;
+    margin: 0 auto;
+
+}
+form {
+    margin: 40px;
+}
+form label, p {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+form div p {
+    font-style: italic;
+    font-weight: bold;
+}
+form input, textarea {
+    
+}
+.input-text {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 50%;
+}
+.check {
+    margin: 0, 10px;
+}
