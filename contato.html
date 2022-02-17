@@ -23,22 +23,30 @@
         <main>
             <form id="contact-form">
                 <input type="hidden" name="contact_number">
-                <label for="nomeSobrenome">Nome e Sobrenome</label>
-                <input type="text" id="nomeSobrenome" class="input-text" placeholder="Digite aqui">
-                <label for="email">E-mail</label>
-                <input type="text" id="email" placeholder="Email" class="input-text">
+                <label for="name">Nome e Sobrenome</label>
+                <input type="text" id="from_name" class="input-text" placeholder="Digite aqui" name="from_name">
+                <label for="reply_to">E-mail</label>
+                <input type="email" id="reply_to" placeholder="Email" class="input-text" name="reply_to">
                 <label for="telefone">Telefone</label>
-                <input type="text" id="telefone" placeholder="Telefone" class="input-text">
-                <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" placeholder="Digite sua mensagem" cols="80" rows="10" class="input-text"></textarea>
+                <input type="tel" id="telefone" placeholder="Telefone" class="input-text" name="telefone">
+                <label for="message">Mensagem</label>
+                <textarea id="message" placeholder="Digite sua mensagem" cols="80" rows="10" class="input-text" name="message"></textarea>
                 <div class="contacts">
                     <p>Como prefere o contato?</p>
                     <label for="formaEmail"> <input type="radio" name="contact" id="formaEmail" value="email">Email</label>
                     <label for="formaWapp"> <input type="radio" name="contact" id="formaWapp" value="WhatsApp">WhatsApp</label>
                    <label for="formaTelefone"><input type="radio" name="contact" id="formaTelefone" value="telefone">Telefone</label>
                 </div>
-                    <label><input type="checkbox" class="check"> Gostaria de receber novidades por email?</label>
-                    <input type="submit" id="enviar">
+                <div class= "hora-contato">
+                    <p>Selecione o horário preferido para contato</p>
+                    <select name = "horario">
+                        <option value="Manhã">Manhã</option>
+                        <option value="Tarde">Tarde</option>
+                        <option value="Noite">Noite</option>
+                    </select>
+                </div>
+                <label><input type="checkbox" class="check" name="newsletter"> Gostaria de receber novidades por email?</label>
+                <input type="submit" id="enviar">
                 
                 
             </form>
