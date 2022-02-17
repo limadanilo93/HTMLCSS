@@ -10,7 +10,7 @@
     <body>
         <header>
             <div class="caixa">
-                <h1 class="logo"><img src="./images/logo.png"></h1>
+                <h1 class="logo"><img src="./images/logo.png" alt="Logo barbearia alura"></h1>
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -22,39 +22,72 @@
         </header>
         <main>
             <form id="contact-form">
-                <input type="hidden" name="contact_number">
-                <label for="name">Nome e Sobrenome</label>
-                <input type="text" id="from_name" class="input-text" placeholder="Digite aqui" name="from_name">
-                <label for="reply_to">E-mail</label>
-                <input type="email" id="reply_to" placeholder="Email" class="input-text" name="reply_to">
-                <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" placeholder="Telefone" class="input-text" name="telefone">
-                <label for="message">Mensagem</label>
-                <textarea id="message" placeholder="Digite sua mensagem" cols="80" rows="10" class="input-text" name="message"></textarea>
-                <div class="contacts">
-                    <p>Como prefere o contato?</p>
+                <fieldset class="informacoes">
+                    <input type="hidden" name="contact_number">
+                    <label for="name">Nome e Sobrenome</label>
+                    <input type="text" id="from_name" class="input-text" placeholder="Digite aqui" name="from_name" required>
+                    <label for="reply_to">E-mail</label>
+                    <input type="email" id="reply_to" placeholder="exemplo@exemplo.com" class="input-text" name="reply_to" required>
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" placeholder="Número com DDD" class="input-text" name="telefone" required>
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" placeholder="Digite sua mensagem" cols="80" rows="10" class="input-text" name="message"></textarea>
+                </fieldset>
+                <fieldset class="contacts">
+                    <legend class="perguntas">Como prefere o contato?</legend>
                     <label for="formaEmail"> <input type="radio" name="contact" id="formaEmail" value="email">Email</label>
-                    <label for="formaWapp"> <input type="radio" name="contact" id="formaWapp" value="WhatsApp">WhatsApp</label>
+                    <label for="formaWapp"> <input type="radio" name="contact" id="formaWapp" value="WhatsApp" checked>WhatsApp</label>
                    <label for="formaTelefone"><input type="radio" name="contact" id="formaTelefone" value="telefone">Telefone</label>
-                </div>
-                <div class= "hora-contato">
-                    <p>Selecione o horário preferido para contato</p>
+                </fieldset>
+                <fieldset class= "hora-contato">
+                    <legend class="perguntas">Selecione o horário preferido para contato</legend>
                     <select name = "horario">
                         <option value="Manhã">Manhã</option>
                         <option value="Tarde">Tarde</option>
                         <option value="Noite">Noite</option>
                     </select>
-                </div>
+                </fieldset>
                 <label><input type="checkbox" class="check" name="newsletter"> Gostaria de receber novidades por email?</label>
-                <input type="submit" id="enviar">
+                <input type="submit" class="enviar">
                 
                 
             </form>
+            <table class="funcionamento">
+                
+                <thead>
+                    <tr class="cabecalho">
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody class="horariosfunc">
+                    <tr>
+                    <td>Segunda</td>
+                    <td>13:00 - 17:00</td>
+                    </tr>
+                    <tr>
+                        <td>Terça</td>
+                        <td>08:00 - 17:00</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>08:00 - 17:00</td>
+                    </tr>
+                    <tr>
+                        <td>Quinta</td>
+                        <td>08:00 - 17:00</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>08:00 - 12:00</td>
+                    </tr>
+                </tbody> 
+            </table>
             <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
             <script src="./appcontact.js"></script>
         </main>
         <footer>
-            <img src="./images/logo-branco.png">
+            <img src="./images/logo-branco.png" alt="Logo branco barbearia alura">
             <p>	&copy;Todos os direitos reservados</p>
         </footer>
     </body>

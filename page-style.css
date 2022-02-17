@@ -81,22 +81,33 @@ footer {
 main {
     width: 940px;
     margin: 0 auto;
-
+    display:flex;
+    flex-direction: column;
+    
 }
 form {
     margin: 40px;
+    justify-content: center;
+    
 }
-form label, p {
+form label {
     display: block;
     font-size: 22px;
     margin-bottom: 10px;
 }
-form div p {
-    font-style: italic;
-    font-weight: bold;
+.perguntas {
+    font-size: 22px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.hora-contato {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
 }
 form input, textarea {
-    
+    font-weight: 600;
 }
 .input-text {
     display: block;
@@ -106,4 +117,47 @@ form input, textarea {
 }
 .check {
     margin: 0, 10px;
+}
+.enviar {
+    width: 20%;
+    padding: 5px;
+    background-color: #494949;
+    color: #ffffff;
+    border-radius:20%;
+    cursor: pointer;
+}
+.enviar:hover {
+    
+    transition: 500ms transform;
+    transform: scale(1.2);
+}
+.funcionamento{
+    position: relative;
+    margin: 40px;
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    border:solid 1px #000000;
+}
+.cabecalho{
+    background: #494949;
+    color: #FFFFFF;
+    padding: 5px;
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: 600;
+}
+.cabecalho th{
+    border:solid 3px #000000;
+}
+.horariosfunc {
+    color: #494949;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: 400;
+    
+}
+.horariosfunc td{
+    border:solid 1px #000000;
 }
